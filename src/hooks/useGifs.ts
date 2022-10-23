@@ -13,7 +13,7 @@ export default function useGifs ({ keyword } = { keyword: null }): any {
     getGifs({ keyword: keywordToUse })
       .then(gifs => {
         setGifs(gifs)
-        localStorage.setItem('lastkeyword', keyword)
+        localStorage.setItem('lastkeyword', keyword ?? 'random')
       })
       .catch(console.log)
       .finally(() => setLoading(false))
