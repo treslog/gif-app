@@ -9,18 +9,25 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@geist-ui/core": "2.3.8",
+    "@geist-ui/icons": "1.0.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "wouter": "^2.8.0-alpha.2"
   },
   "devDependencies": {
-    "@types/react": "18.0.15",
+    "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
-    "@vitejs/plugin-react": "2.0.0",
-    "standard": "^17.0.0",
+    "@vitejs/plugin-react": "2.0.1",
+    "eslint": "7.32.0",
+    "ts-standard": "11.0.0",
     "typescript": "4.7.4",
-    "vite": "3.0.4"
+    "typescript-eslint": "0.0.1-alpha.0",
+    "vite": "3.0.8"
   },
   "eslintConfig": {
-    "extends": ["./node_modules/standard/eslintrc.json"]
+    "extends": [
+      "./node_modules/ts-standard/eslintrc.json"
+    ]
   }
 }
